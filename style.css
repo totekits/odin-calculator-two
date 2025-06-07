@@ -1,0 +1,111 @@
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+.main-container {
+  border: 1px solid red;
+  width: 50vw;
+  aspect-ratio: 4 / 3;
+  min-width: 200px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.display {
+  border: 1px solid orange;
+  height: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  padding: 2%;
+  background-color: black;
+  font-size: clamp(24px, 3vw, 36px)
+}
+
+.buttons {
+  border: 1px solid orange;
+  height: 75%;
+  display: flex;
+}
+
+.left-buttons {
+  border: 1px solid yellow;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+}
+
+.left-buttons > * {
+  border: 1px solid turquoise;
+  height: 25%;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  display: flex;
+}
+
+.row-1 > *,
+.row-2 > *,
+.row-3 > *,
+.row-4 > * {
+  width: 33.333%;
+}
+
+.right-buttons {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#clear {
+  border: 1px solid green;
+  height: 25%;
+}
+
+.right-bottom-buttons {
+  border: 1px solid green;
+  display: flex;
+  height: 75%;
+}
+
+.right-bottom-buttons > * {
+  width: 50%;
+}
+
+.right-buttom-left-buttons {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+#x {
+  height: 33.333%;
+}
+
+#add {
+  height: 66.666%;
+}
+
+.right-buttom-right-buttons {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-buttom-right-buttons > * {
+  height: 33.333%;
+}
+
+button {
+  font-size: clamp(12px, 2vw, 24px);
+}
