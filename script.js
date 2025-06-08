@@ -21,8 +21,3 @@ let operator;
 function operate(x, operatorFunction, y) {
   return operatorFunction(x, y);
 }
-
-let display = ``;
-function populateDisplay() {
-  display += 
-}
