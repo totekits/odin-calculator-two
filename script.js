@@ -1,23 +1,28 @@
 function add(x, y) {
-      return x + y;
-    }
+  return x + y;
+}
 
-    function subtract(x, y) {
-      return x - y;
-    }
+function subtract(x, y) {
+  return x - y;
+}
 
-    function multiply(x, y) {
-      return x * y;
-    }
+function multiply(x, y) {
+  return x * y;
+}
 
-    function divide(x, y) {
-      return x / y;
-    }
+function divide(x, y) {
+  return x / y;
+}
     
-    let operand1;
-    let operand2;
-    let operator;
+let operand1;
+let operand2;
+let operator;
 
-    function operate(x, operatorFunction, y) {
-      return operatorFunction(x, y);
-    }
+function operate(x, operatorFunction, y) {
+  return operatorFunction(x, y);
+}
+
+let display = ``;
+function populateDisplay() {
+  display += 
+}
