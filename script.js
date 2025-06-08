@@ -14,9 +14,9 @@ function divide(x, y) {
   return x / y;
 }
     
-let operand1;
-let operand2;
-let operator;
+let operand1 = ``;
+let operand2 = ``;
+let operator = ``;
 
 function operate(x, operatorFunction, y) {
   return operatorFunction(x, y);
@@ -53,6 +53,15 @@ const divideBtn = document.querySelector(`#÷`);
 const addBtn = document.querySelector(`#add`);
 const subtractBtn = document.querySelector(`#-`);
 
+seven.addEventListener(`click`, () => {
+  if (operator === ``) {
+    operand1 += `7`;
+    updateDisplay(operand1);
+  } else {
+    operand2 += `7`;
+    updateDisplay(operand2)
+  }
+});
 
 
 
