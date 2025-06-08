@@ -70,9 +70,43 @@ dotBtn.addEventListener(`click`, () => {
 });
 
 const multiplyBtn = document.querySelector(`#x`);
+
+multiplyBtn.addEventListener(`click`, () => {
+  if (operator === `` && operand1 !== `` && operand1 !== `-`) {
+    operator = `*`;
+    updateDisplay(`x`);
+  } 
+});
+
 const divideBtn = document.querySelector(`#÷`);
+
+divideBtn.addEventListener(`click`, () => {
+  if (operator === `` && operand1 !== `` && operand1 !== `-`) {
+    operator = `/`;
+    updateDisplay(`÷`);
+  } 
+});
+
 const addBtn = document.querySelector(`#add`);
+
+addBtn.addEventListener(`click`, () => {
+  if (operator === `` && operand1 !== `` && operand1 !== `-`) {
+    operator = `+`;
+    updateDisplay(`+`);
+  } 
+});
+
 const subtractBtn = document.querySelector(`#-`);
+
+subtractBtn.addEventListener(`click`, () => {
+  if (operand1 === ``) {
+    operand1 = `-`;
+    updateDisplay(operand1);
+  } else if (operator === `` && operand1 !== `` && operand1 !== `-`) {
+    operator = `-`;
+    updateDisplay(`-`);
+  }
+});
 
 
 
