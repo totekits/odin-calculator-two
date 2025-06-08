@@ -51,7 +51,7 @@ numberButtons.forEach(button => {
   });
 });
 
-const dotBtn = document.querySelector(`#.`);
+const dotBtn = document.querySelector(`#dot`);
 
 dotBtn.addEventListener(`click`, () => {
   if (operator === `` && operand1 === ``) {
@@ -69,7 +69,7 @@ dotBtn.addEventListener(`click`, () => {
   }
 });
 
-const multiplyBtn = document.querySelector(`#x`);
+const multiplyBtn = document.querySelector(`#multiply`);
 
 multiplyBtn.addEventListener(`click`, () => {
   if (operator === `` && operand1 !== `` && operand1 !== `-`) {
@@ -78,7 +78,7 @@ multiplyBtn.addEventListener(`click`, () => {
   } 
 });
 
-const divideBtn = document.querySelector(`#÷`);
+const divideBtn = document.querySelector(`#divide`);
 
 divideBtn.addEventListener(`click`, () => {
   if (operator === `` && operand1 !== `` && operand1 !== `-`) {
@@ -96,7 +96,7 @@ addBtn.addEventListener(`click`, () => {
   } 
 });
 
-const subtractBtn = document.querySelector(`#-`);
+const subtractBtn = document.querySelector(`#minus`);
 
 subtractBtn.addEventListener(`click`, () => {
   if (operand1 === ``) {
@@ -107,14 +107,4 @@ subtractBtn.addEventListener(`click`, () => {
     updateDisplay(`-`);
   }
 });
-
-
-
-
-
-
-
-
-
-
 
