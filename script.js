@@ -36,6 +36,24 @@ clear.addEventListener(`click`, () => {
   updateDisplay(content);
 });
 
+const seven = document.querySelector(`#7`);
+const eight = document.querySelector(`#8`);
+const nine = document.querySelector(`#9`);
+const four = document.querySelector(`#4`);
+const five = document.querySelector(`#5`);
+const six = document.querySelector(`#6`);
+const one = document.querySelector(`#1`);
+const two = document.querySelector(`#2`);
+const three = document.querySelector(`#3`);
+const zero = document.querySelector(`#0`);
+const doubleZero = document.querySelector(`#00`);
+const dot = document.querySelector(`#.`);
+const multiplyBtn = document.querySelector(`#x`);
+const divideBtn = document.querySelector(`#÷`);
+const addBtn = document.querySelector(`#add`);
+const subtractBtn = document.querySelector(`#-`);
+
+
 
 
 
