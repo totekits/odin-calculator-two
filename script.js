@@ -21,3 +21,22 @@ let operator;
 function operate(x, operatorFunction, y) {
   return operatorFunction(x, y);
 }
+
+let content = ``;
+const display = document.querySelector(`.display`);
+
+function updateDisplay(value) {
+  display.textContent = value;
+}
+
+const clear = document.querySelector(`#clear`);
+
+clear.addEventListener(`click`, () => {
+  content = ``;
+  updateDisplay(content);
+});
+
+
+
+
+
