@@ -33,6 +33,9 @@ const clear = document.querySelector(`#clear`);
 
 clear.addEventListener(`click`, () => {
   content = ``;
+  operand1 = ``;
+  operator = ``;
+  operand2 = ``;
   updateDisplay(content);
 });
 
@@ -73,7 +76,7 @@ const multiplyBtn = document.querySelector(`#multiply`);
 
 multiplyBtn.addEventListener(`click`, () => {
   if (operator === `` && operand1 !== `` && operand1 !== `-`) {
-    operator = `*`;
+    operator = `x`;
     updateDisplay(`x`);
   } 
 });
@@ -108,3 +111,29 @@ subtractBtn.addEventListener(`click`, () => {
   }
 });
 
+const equalBtn = document.querySelector(`#equal`);
+
+equalBtn.addEventListener(`click`, () => {
+  if (operand2 !== `` && operand2 !== `-`) {
+    const num1 = Number(operand1);
+    const num2 = Number(operand2);
+
+    let operationFunction;
+    if (operator === `+`) {
+      operationFunction = add;
+    } else if (operator === `-`) {
+      operationFunction = subtract;
+    } else if (operator === `x`) {
+      operationFunction = multiply;
+    } else {
+      operationFunction = divide;
+    }
+
+    const result = operate(num1, operationFunction, num2);
+    updateDisplay(result);
+
+    operand1 = String(result)
+    operator = ``;
+    operand2 = ``;
+  }
+})
