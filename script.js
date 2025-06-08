@@ -47,20 +47,25 @@ const two = document.querySelector(`#2`);
 const three = document.querySelector(`#3`);
 const zero = document.querySelector(`#0`);
 const doubleZero = document.querySelector(`#00`);
+const numberButtons = document.querySelectorAll(`.number`);
+
 const dot = document.querySelector(`#.`);
 const multiplyBtn = document.querySelector(`#x`);
 const divideBtn = document.querySelector(`#÷`);
 const addBtn = document.querySelector(`#add`);
 const subtractBtn = document.querySelector(`#-`);
 
-seven.addEventListener(`click`, () => {
-  if (operator === ``) {
-    operand1 += `7`;
-    updateDisplay(operand1);
-  } else {
-    operand2 += `7`;
-    updateDisplay(operand2)
-  }
+numberButtons.forEach(button => {
+  button.addEventListener(`click`, () => {
+    const digit = button.textContent;
+    if (operator === ``) {
+      operand1 += digit;
+      updateDisplay(operand1);
+    } else {
+      operand2 += digit;
+      updateDisplay(operand2);
+    }
+  });
 });
 
 
